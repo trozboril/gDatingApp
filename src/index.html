@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='gDates'>
+ <head>
+   <meta charset="utf-8">
+   <title>gDates</title>
+   
+   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   
+   <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+  <body>
+  <!-- NAV BAR START -->
+  <div ng-controller='loginController'>
+    <nav>
+      <div class='navigation'>
+        <a href='#/'><button class='pull-left navstuff gdate'><strong>g</strong>Dates</button></a>
+        <a href='#/login'><button ng-hide='currentUser' class='login pull-right navstuff'>Login</button></a>
+        <a href='#/register'><button ng-hide='currentUser' class='register pull-right navstuff'>Register</button></a>
+        <a ng-href='#/members/'><button ng-show='currentUser' class='register pull-right navstuff'>Members</button></a>
+        <a ng-href='#/profile/{{ currentUser.username }}'><button ng-show='currentUser' class='register pull-right navstuff'>My Profile</button></a>
+        <span><a href='#/'><button ng-show='currentUser' ng-click='logout()'class='register pull-right navstuff'>Logout</button></a></span>
+      </div>
+    </nav>
+    <!-- END NAV -->
+     <!-- sample angular code -->
+     
+    <div ng-controller='memberMainCtrl' class="container-fluid">
+      <div ng-view></div>
+    </div>
+  
+
+
+  </div>
+<!-- END BULK BODY, START SCRIPT -->
+     
+   <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+       
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.10/angular.js"></script>
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.10/angular-route.min.js"></script>
+   <script type="text/javascript" src="js/app.js"></script>
+   <script type="text/javascript" src="js/routes.js"></script>
+   <script type='text/javascript' src='js/controllers/controllers.js'></script>
+   <script type='text/javascript' src='js/services/services.js'></script>
+
+    <script type="text/javascript" src="js/controllers/register-controller.js"></script>
+    <script type="text/javascript" src="js/controllers/login-controller.js"></script>
+    <script type="text/javascript" src="js/services/auth-interceptor-service.js"></script>
+    <script type="text/javascript" src="js/services/auth-service.js"></script>
+    <script type="text/javascript" src="js/directives.js"></script>
+ </body>
+</html>

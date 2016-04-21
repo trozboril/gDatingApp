@@ -1,0 +1,30 @@
+<div>
+
+  <div>
+    <div class='members' id="" style="overflow-y: scroll; height:800px;">
+      <div ng-repeat='member in members'>
+        <div class='individualMember'>
+          <img class='usrimg' ng-src='{{member.avatar}}'>
+            <div class='imgSide'>
+              <h4><strong>{{member.names.firstName}}<strong></h4>
+              <h5><strong>Location: </strong>{{member.address.city}}</h5>
+              <h5 ng-init='getAge(member.dob)'><strong>Age: </strong>{{memberAge}}</h5>
+              <a ng-click='isMemberDisplay = !isMemberDisplay'><button class='btn btn-success'>Check Them Out</button></a>
+              <div style='clear:both'></div>
+             </div>
+        </div>
+
+        <div class='memberProfile' ng-show='isMemberDisplay'>
+          <strong><h4>{{member.names.firstName}} {{member.names.lastName}}</h4></strong>
+          <hr>
+          <h5><strong>Email: </strong>{{member.email}}</h5>
+          <h5><strong>Phone: </strong>{{member.phone}}</h5>
+          <hr>
+          <img ng-src='{{member.avatar}}' style='height: 300px; width: 300px'>
+
+          <button ng-click='isMemberDisplay = !isMemberDisplay' class='btn btn-warning pull-right'>This person sucks!</button>
+          <button class='btn btn-primary pull-right'>Try to Meet</button>
+        </div>
+      </div>
+    </div>
+  </div>

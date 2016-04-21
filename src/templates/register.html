@@ -1,0 +1,27 @@
+<div class='individualProfilePage'>
+  <div class='editForm'>
+    <h1><strong>Register: </strong></h1>    
+    <form ng-init='firstName; lastName; lat; lng; phone; email; slug; username'>
+      <label for='firstName'>First Name: </label>
+      <input class='form-control' type='text' ng-model='firstName' placeholder='First Name...'>
+      <label for='lastName'>Last Name: </label>
+      <input class='form-control' type='text' ng-model='lastName' placeholder='Last Name...'>
+      <label for='lattitude'>Latitude: </label>
+      <input class='form-control' type='text' ng-model='lat' placeholder='Latitude...'>
+      <label for='lng'>Longitude: </label>
+      <input class='form-control' type='text' ng-model='lng' placeholder='Longitude...'>
+      <label for='phone'>Phone: </label>
+      <input class='form-control' type='text' ng-model='phone' placeholder='Phone Number...'>
+      <label for='email'>Email: </label>
+      <input class='form-control' type='text' ng-model='email' placeholder='Email...'>
+      <label for='slug'>Slug: </label>
+      <input class='form-control' type='text' ng-model='slug' placeholder='Slug...'>
+      <label for='username'>User Name: </label>
+      <input class='form-control' type='text' ng-model='username' placeholder='User Name...'>
+      <div class='editBtnContainer'>
+        <button ng-click='' class='editBtn btn btn-success'>Submit</button>
+        <a href='#/'><button class='editBtn btn btn-warning'>Cancel</button></a>
+      </div>
+    </form>
+  </div>
+</div>

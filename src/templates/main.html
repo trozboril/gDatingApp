@@ -1,0 +1,19 @@
+
+
+<div class='bigPicture'>
+  <div class='textDivMain'>
+    <h1 class='bigPicText'>Dating for Beautiful People</h1>
+    <h5 class='bigPicText'>Made Simple</h5>
+    <a href='#/register'><button class='btn btn-success bigPicBtn'>Get Started</button></a>
+  </div>
+</div>
+
+<div ng-repeat='member in members | limitTo: 3'>
+  <div class='frontPageView'> 
+    <div class='frontMemberInfo'>
+      <img ng-src='{{member.avatar}}'>
+      <h4><strong>{{member.names.firstName}}<strong></h4>
+      <h5><strong>Location: </strong>{{member.address.city}}</h5>
+    </strong>
+  </div>
+</div>

@@ -1,0 +1,193 @@
+/* add custom styles */
+body {
+  margin: none;
+  padding: none;
+  font-family: sans-serif;
+  background-image: url("http://previews.123rf.com/images/kyolshin/kyolshin1303/kyolshin130300089/18533511-Dirty-gray-wall-with-black-stains-Green-grass-near-stonewall-of-old-building-Seamless-background-Mol-Stock-Photo.jpg");
+}
+
+.navigation {
+  border-bottom: 1px solid black;
+  height: 3em;
+  width: 100%;
+  background-color: #ccc;
+  opacity: .8;
+}
+
+.navstuff {
+  background-color: #333;
+  border-radius: 5px;
+  margin-top: .6em;
+  color: white;
+  text-decoration: none;
+}
+
+.gdate {
+  background-color: none;
+}
+
+.navstuff:hover {
+  color: lightblue;
+}
+
+.login-form {
+  height: 21.5em;
+  width: 50%;
+  border: 1px solid #aaa;
+  margin-left: 25%;
+  margin-top: 3%;
+  background-color: #ddd;
+  opacity: .95;
+  border-radius: 3px;
+}
+
+h3 {
+  margin-left: 5%;
+}
+
+input {
+  border-radius: 5px;
+}
+
+/*MAIN*/ /*PAGE*/
+.bigPicture {
+  top: 0;
+  border-radius: 5px;
+  height: 30em;
+  width: 100%;
+  background-image: url("http://media02.hongkiat.com/black_wallpapers/black-matter.jpg");
+}
+
+.textDivMain {
+
+}
+
+.bigPicText {
+  color: #aaa;
+  text-align: center;
+}
+
+.bigPicBtn {
+  margin-left: 46.5%;
+}
+
+.container-fluid {
+  padding: 0;
+  margin: 0;
+}
+
+.frontPageView {
+  margin-top: 2%;
+  margin-left: 4%;
+  text-align: center;
+  height: 250px;
+  width: 400px;
+  float: left;
+  background-color: #FCFBE3;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.frontMemberInfo {
+  margin-top: 10px;
+}
+
+/*MEMBERS*/ /*PAGE*/
+
+.members {
+  width: 35%;
+  background-color: #FCFBE3;
+  opacity: .95;
+  float: left;
+}
+
+.usrimg {
+  width: 200px;
+  height: 200px;
+  float: left;
+}
+
+.individualMember {
+  border: 1px solid black;
+}
+
+.imgSide {
+  margin-left: 5px;
+}
+
+.memberProfile {
+  background-color: #FCFBE3;
+  border: 1px solid black;
+  border-radius: 5px;
+  opacity: .95;
+  height: 500px;
+  width: 40%;
+  position: absolute;
+  margin-left: 47%;
+  top: 23%;
+}
+
+/*INDIVIDUAL PROFILE PAGE*/
+
+.individualProfilePage {
+  height: 700px;
+  width: 81%;
+  background-color: #FCFBE3;
+  border: 1px solid black;
+  border-radius: 5px;
+  opacity: .95;
+  margin-left: 9.5%;
+  margin-top: 2.2%;
+}
+
+.editBtn {
+  bottom: 0;
+}
+
+.profilePic {
+  height: 300px;
+  width: 300px;
+}
+
+.stuffContainer {
+  text-align: center;
+}
+
+.form-control {
+  width: 95%;
+}
+
+.editForm {
+  margin-left: 4.5%;
+  margin-top: 2%;
+}
+
+.editBtnContainer {
+  margin-top: 4.5%;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
