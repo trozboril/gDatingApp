@@ -19,23 +19,23 @@
   <div class='individualProfilePage' ng-show='editProfileCounter'>
     <div class='editForm'>
       <h1><strong>Edit: </strong></h1>
-      <form ng-init='firstName; lastName; lat; lng; phone; email; slug; username'>
+      <form>
         <label for='firstName'>First Name: </label>
-        <input class='form-control' type='text' ng-model='firstName' placeholder='{{currentUser.names.firstName}}' value='{{currentUser.names.firstName}}'>
+        <input class='form-control' type='text' ng-model='user.names.firstName' placeholder='{{currentUser.names.firstName}}' value='{{currentUser.names.firstName}}'>
         <label for='lastName'>Last Name: </label>
-        <input class='form-control' type='text' ng-model='lastName' placeholder='{{currentUser.names.lastName}}' value='{{currentUser.names.lastName}}'>
+        <input class='form-control' type='text' ng-model='user.names.lastName' placeholder='{{currentUser.names.lastName}}' value='{{currentUser.names.lastName}}'>
         <label for='lattitude'>Latitude: </label>
-        <input class='form-control' type='text' ng-model='lat' placeholder='{{currentUser.address.geo.lat}}' value='{{currentUser.address.geo.lat}}'>
+        <input class='form-control' type='text' ng-model='user.address.geo.lat' placeholder='{{currentUser.address.geo.lat}}' value='{{currentUser.address.geo.lat}}'>
         <label for='lng'>Longitude: </label>
-        <input class='form-control' type='text' ng-model='lng' placeholder='{{currentUser.address.geo.lng}}' value='{{currentUser.address.geo.lng}}'>
+        <input class='form-control' type='text' ng-model='user.address.geo.lng' placeholder='{{currentUser.address.geo.lng}}' value='{{currentUser.address.geo.lng}}'>
         <label for='phone'>Phone: </label>
-        <input class='form-control' type='text' ng-model='phone' placeholder='{{currentUser.phone}}' value='{{currentUser.phone}}'>
+        <input class='form-control' type='text' ng-model='user.phone' placeholder='{{currentUser.phone}}' value='{{currentUser.phone}}'>
         <label for='email'>Email: </label>
-        <input class='form-control' type='text' ng-model='email' placeholder='{{currentUser.email}}' value='{{currentUser.email}}'>
+        <input class='form-control' type='text' ng-model='user.email' placeholder='{{currentUser.email}}' value='{{currentUser.email}}'>
         <label for='slug'>Slug: </label>
-        <input class='form-control' type='text' ng-model='slug' placeholder='{{currentUser.slug}}' value='{{currentUser.slug}}'>
+        <input class='form-control' type='text' ng-model='user.slug' placeholder='{{currentUser.slug}}' value='{{currentUser.slug}}'>
         <label for='username'>User Name: </label>
-        <input class='form-control' type='text' ng-model='username' placeholder='{{currentUser.username}}' value='{{currentUser.username}}'>
+        <input class='form-control' type='text' ng-model='user.username' placeholder='{{currentUser.username}}' value='{{currentUser.username}}'>
         <div class='editBtnContainer'>
           <button ng-click='editProfile(currentUser.id)' class='editBtn btn btn-success'>Submit</button>
           <button class='editBtn btn btn-warning' ng-click='editProfileCounter = !editProfileCounter'>Cancel</button>

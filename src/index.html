@@ -18,7 +18,7 @@
         <a href='#/register'><button ng-hide='currentUser' class='register pull-right navstuff'>Register</button></a>
         <a ng-href='#/members/'><button ng-show='currentUser' class='register pull-right navstuff'>Members</button></a>
         <a ng-href='#/profile/{{ currentUser.username }}'><button ng-show='currentUser' class='register pull-right navstuff'>My Profile</button></a>
-        <span><a href='#/'><button ng-show='currentUser' ng-click='logout()'class='register pull-right navstuff'>Logout</button></a></span>
+        <span><a href='#/logout'><button ng-show='currentUser' ng-click='logout()'class='register pull-right navstuff'>Logout</button></a></span>
       </div>
     </nav>
     <!-- END NAV -->

@@ -1,8 +1,13 @@
 <div>
 
   <div>
+    <div class='searchArea'>
+      <p class='name'>Search members:
+       <input ng-model='nameSearch' type='text'>
+      </p>
+    </div>
     <div class='members' id="" style="overflow-y: scroll; height:800px;">
-      <div ng-repeat='member in members'>
+      <div ng-repeat='member in members | filter: nameSearch'>
         <div class='individualMember'>
           <img class='usrimg' ng-src='{{member.avatar}}'>
             <div class='imgSide'>

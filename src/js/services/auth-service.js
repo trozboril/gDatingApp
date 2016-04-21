@@ -28,12 +28,12 @@
       login: function(user) {
         return $http.post('https://galvanize-student-apis.herokuapp.com/gdating/auth/login', user, config);
       },
-      logout: function(user) {
-      user = null;
+      logout: function() {
+        console.log('yolo');
         $window.localStorage.clear();
       },
       register: function(user) {
-        return $http.post('/auth/register', user);
+        return $http.post('https://galvanize-student-apis.herokuapp.com/gdating/auth/register', user, config);
       },
       setUserInfo: function(userData) {
         $window.localStorage.setItem('user', JSON.stringify(userData.data.data.user));

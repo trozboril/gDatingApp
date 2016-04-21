@@ -22,6 +22,9 @@
           console.log(err);
         });
     };
+    $scope.logout = function () {
+      authService.logout();
+    };
   }
 
 })();

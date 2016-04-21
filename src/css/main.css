@@ -57,7 +57,10 @@ input {
   width: 100%;
   background-image: url("http://media02.hongkiat.com/black_wallpapers/black-matter.jpg");
 }
-
+.mainPageImg {
+  width: 125px;
+  height: 125px;
+}
 .textDivMain {
 
 }
@@ -94,7 +97,18 @@ input {
 
 /*MEMBERS*/ /*PAGE*/
 
+.name {
+  opacity: .95;
+  margin-top: 1%;
+  border: 1px solid black;
+  width: 35%;
+  padding: 0;
+  color: black;
+  background-color: #FCFBE3;
+}
 .members {
+  padding: 0;
+  top: 0;
   width: 35%;
   background-color: #FCFBE3;
   opacity: .95;
@@ -167,7 +181,23 @@ input {
   text-align: center;
 }
 
+/*REGISTER PAGE*/
 
+.registerProfilePage {
+  height: 725px;
+  width: 81%;
+  background-color: #FCFBE3;
+  border: 1px solid black;
+  border-radius: 5px;
+  opacity: .95;
+  margin-left: 9.5%;
+  margin-top: 1%;
+}
+
+.registerBtnContainer {
+  margin-top: 1%;
+  text-align: center;
+}
 
 
 
