@@ -15,6 +15,11 @@ app.config(function($routeProvider, $locationProvider){
    .when('/register', {
     template:'<register></register>',
     restricted: false,
+    preventLoggedIn: true
+   })
+   .when('/profile', {
+    template:'<update></update>',
+    restricted: true,
     preventLoggedIn: false
    })
    .when('/members', {

@@ -1,4 +1,4 @@
-<div ng-controller='registerController'> 
+<!-- <div ng-controller='registerController'>  -->
   <div ng-show='!editProfileCounter'class='individualProfilePage'>
     <div class='stuffContainer'>
       <h1><strong>Welcome: </strong>{{currentUser.names.firstName}} {{currentUser.names.lastName}}</h1>
@@ -13,6 +13,9 @@
       <h4><strong>DOB: </strong>{{currentUser.dob}}</h4>
       <h4><strong>User Name: </strong>{{currentUser.username}}</h4>
       <button class='editBtn btn btn-success'ng-click='editProfileCounter = !editProfileCounter'>Edit</button>
+    </div>
+    <div class='matches'>
+      
     </div>
   </div>
 
@@ -37,10 +40,10 @@
         <label for='username'>User Name: </label>
         <input class='form-control' type='text' ng-model='user.username' placeholder='{{currentUser.username}}' value='{{currentUser.username}}'>
         <div class='editBtnContainer'>
-          <button ng-click='editProfile(currentUser.id)' class='editBtn btn btn-success'>Submit</button>
+          <button ng-click='update(currentUser.id)' class='editBtn btn btn-success'>Submit</button>
           <button class='editBtn btn btn-warning' ng-click='editProfileCounter = !editProfileCounter'>Cancel</button>
         </div>
       </form>
     </div>
   </div>
-</div>
+<!-- </div> -->

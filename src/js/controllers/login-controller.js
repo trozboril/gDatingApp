@@ -28,6 +28,3 @@
   }
 
 })();
-
-//clemmie.prohaska74_wehner@hotmail.com
-//GJO_6cA3Epo4sJV8V8Yi
